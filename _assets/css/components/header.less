@@ -1,6 +1,6 @@
 /*HEADER*/
 .header__top-bar{
-    height: 70px;
+    min-height: 70px;
     position: relative;
     background-color: #fff;
     border-top: 1px solid #e4e4e4;
@@ -9,18 +9,21 @@
     width: 100%;
 }
 
+
 /*Header_Logo*/
 .header__top-bar__logo{
     float: left!important;
     width: 176px;
-    height: 50px;
+    height: 70px;
     padding-top: 20px;
+    overflow:visible;
 }
 
 /*Header_Navbar*/
 .header__top-bar__navbar{
     height: 70px;
     margin-left: 25px;
+    border-top: 1px solid #ddd;
 }
 
 .header__top-bar__navbar ul{
@@ -37,9 +40,10 @@
     color: #9a9a90;
     text-decoration: none;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 900;
     padding: 26px 15px 22px 15px;
     display: block;
+    border-bottom: 4px solid #ffffff;
 }
 
 .header__top-bar__navbar ul li a:hover{
@@ -52,16 +56,114 @@
     transition: all .4s ease;
 }
 
-.header__top-bar__NavbarCollpaseBtn {
+.header__top-bar__navbarcollpasebtn {
     visibility: hidden;
     position: absolute;
     opacity: 0;
 }
 
+.header__top-bar_social{
+    position: absolute;
+    width: 71px;
+    max-height: 71px;
+    overflow: hidden;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    right: 0;
+}
+
+.header__top-bar_social:hover{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    max-height: 600px;
+}
+
+.header__top-bar__social__item {
+    float: right;
+    width: 69px;
+    height: 72px;
+    text-align: center;
+    background-color: #51ab6d;
+    padding-top: 27px;
+    display: inline-block;
+    border-bottom: 1px solid #418857;
+    border-top: none;
+    color: #ffffff;
+}
+
+.header__top-bar__social__item:hover{
+    background-color: #418857;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.header__top-bar__social__item.social{
+    background-color: #ffffff;
+    color: #9a9a90;
+    border-left: 1px solid #e4e4e4;
+}
 
 
-@media (max-width: 979px){
-    .header__top-bar__NavbarCollpaseBtn {
+.header__top-bar__social__item.social:hover{
+    color: #51ab6d;
+    background-color: #f3f4f4;
+}
+
+.header__top-bar__social__item.dribbble:hover {
+    color: #FA4086;
+}
+
+.header__top-bar__social__item.facebook:hover {
+    color: #325c94;
+}
+
+.header__top-bar__social__item.googleplus:hover {
+    color: #d9031f;
+}
+
+.header__top-bar__social__item.twitter:hover {
+    color: #00abdc;
+}
+
+.header__top-bar__social__item.rss:hover {
+    color: #F60;
+}
+
+
+.header__top-bar__search {
+    width: 69px;
+    height: 72px;
+    padding-top: 27px;
+    text-align: center;
+    color: #9a9a90;
+    background-color: #fff;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+
+.header__top-bar__search:hover{
+    background-color: #f3f4f4;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+@media (max-width: 991px){
+    .header__top-bar__navbarcollpasebtn {
         position: absolute;
         right: 27px;
         top: 19px;
@@ -72,5 +174,30 @@
         cursor: pointer;
         visibility: visible;
         opacity: 1;
+    }
+
+    .header__top-bar__navbar ul li {
+        width: 100%;
+        border-bottom: none;
+
+    }
+
+    .header__top-bar__navbar ul li a {
+        padding: 2px 0px;
+    }
+
+    .header__top-bar__navbar ul li a:hover {
+        border-bottom: 4px solid #ffffff;
+        padding: 2px 0px;
+    }
+
+    .header__top-bar__navbar ul {
+        padding: 15px 0 15px;
+    } 
+
+}
+@media (min-width: 991px){
+    .header__top-bar__navbar{
+        display: block;
     }
 }
