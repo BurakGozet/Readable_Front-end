@@ -13,48 +13,65 @@
   <title>Readable Front-End Responsive Burak Gozet</title>
 </head>
 <body>
-  <header>
-    <!--.className>h2#burasidaID>a.class#id{icerik}-->
-    <div class="header__top-bar">
-      <div class="container nonselect">
-        <div class="row">
-          <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-            <div class="header__top-bar__logo"><a href="#"><img src="_assets/img/logo.png"/></a></div>
-          </div>
-          <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
-            <nav>
-              <div class="header__top-bar__navbar collapse" id="collpase_item">
-                <ul>
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="#">NEWS</a></li>
-                  <li><a href="#">ELEMENTS</a></li>
-                  <li><a href="#">ABOUT US</a></li>
-                  <li><a href="#">CONTACT US</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class="col-lg-1 col-md-1 hidden-sm hidden-xs pull-right clear-padding">
-           <div class="header__top-bar__search search_toggle">
-             <i class="fa fa-search"></i>
+  <div class="search-panel">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="search-panel__close-btn search-toggle">
+          <i class="glyphicon glyphicon-remove"></i>
+        </div>
+        <form action="">
+          <input type="text" id="search-input" class="search-panel__input" placeholder="Begin typing for search" />
+          <p>Press enter to see results or esc to cancel.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="page-content-container">
+    <header>
+      <!--.className>h2#burasidaID>a.class#id{icerik}-->
+      <div class="header__top-bar">
+        <div class="container nonselect">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+              <div class="header__top-bar__logo"><a href="#"><img src="_assets/img/logo.png"/></a></div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+              <nav>
+                <div class="header__top-bar__navbar collapse" id="collpase_item">
+                  <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">ELEMENTS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li class="mobile-search-button search-toggle"><a href="#">
+                      <i class="fa fa-search"></i>
+                    </a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-xs pull-right clear-padding">
+             <div class="header__top-bar__search search-toggle">
+               <i class="fa fa-search"></i>
+             </div>
+           </div>
+           <div class="col-lg-1 col-md-1 hidden-sm hidden-xs pull-right clear-padding">
+            <div class="header__top-bar_social">
+             <div class="header__top-bar__social__item social"><i class="fa fa-heart"></i></div>
+             <a href="#"><div class="header__top-bar__social__item dribbble"><i class="fa fa-dribbble"></i></div></a>
+             <a href="#"><div class="header__top-bar__social__item googleplus"><i class="fa fa-google-plus"></i></div></a>
+             <a href="#"><div class="header__top-bar__social__item twitter"><i class="fa fa-twitter"></i></div></a>
+             <a href="#"><div class="header__top-bar__social__item rss"><i class="fa fa-rss"></i></div></a>
+             <a href="#"><div class="header__top-bar__social__item facebook"><i class="fa fa-facebook"></i></div></a>
            </div>
          </div>
-         <div class="col-lg-1 col-md-1 hidden-sm hidden-xs pull-right clear-padding">
-          <div class="header__top-bar_social">
-           <div class="header__top-bar__social__item social"><i class="fa fa-heart"></i></div>
-           <a href="#"><div class="header__top-bar__social__item dribbble"><i class="fa fa-dribbble"></i></div></a>
-           <a href="#"><div class="header__top-bar__social__item googleplus"><i class="fa fa-google-plus"></i></div></a>
-           <a href="#"><div class="header__top-bar__social__item twitter"><i class="fa fa-twitter"></i></div></a>
-           <a href="#"><div class="header__top-bar__social__item rss"><i class="fa fa-rss"></i></div></a>
-           <a href="#"><div class="header__top-bar__social__item facebook"><i class="fa fa-facebook"></i></div></a>
-         </div>
+         <div class="header__top-bar__navbarcollpasebtn" data-toggle="collapse" data-target="#collpase_item"><i class="fa fa-bars fa-lg"></i></div>
        </div>
-       <div class="header__top-bar__navbarcollpasebtn" data-toggle="collapse" data-target="#collpase_item"><i class="fa fa-bars fa-lg"></i></div>
      </div>
    </div>
- </div>
-</header>
-<div class="content">
+ </header>
+ <div class="content">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -273,5 +290,6 @@
     </div>
   </div>
 </footer>
+</div>
 </body>
 </html>

@@ -162,6 +162,18 @@
     transition: all .4s ease;
 }
 
+.mobile-search-button{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.mobile-search-button a{
+    font-size: 18px!important;
+    color: #499a62;
+}
+
 @media (max-width: 991px){
     .header__top-bar__navbarcollpasebtn {
         position: absolute;
@@ -199,5 +211,9 @@
 @media (min-width: 991px){
     .header__top-bar__navbar{
         display: block;
+    }
+
+    .mobile-search-button{
+        display: none;
     }
 }
