@@ -6,10 +6,10 @@ $(document).ready(function(){
 		$("#search-input").trigger("click");
 	});
 
-	$(".search-panel").keydown(function(e){
+	$("body").keydown(function(e){
 		if(e.which == 27){
-			$(".search-panel").toggleClass("show");
-			$(".page-content-container").toggleClass("blur10");
+			$(".search-panel").removeClass("show");
+			$(".page-content-container").removeClass("blur10");
 		}
 	});
 });
